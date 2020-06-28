@@ -2,10 +2,10 @@
   "name": "beer",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/app.ts",
   "scripts": {
     "start": "cross-env NODE_ENV=production node app",
-    "dev": "cross-env NODE_ENV=development nodemon app"
+    "dev": "cross-env NODE_ENV=development nodemon"
   },
   "keywords": [],
   "author": "",
@@ -23,7 +23,15 @@
     "passport-google-oauth20": "^2.0.0"
   },
   "devDependencies": {
+    "@types/express": "^4.17.6",
+    "@types/node": "^14.0.14",
     "cross-env": "^7.0.2",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "ts-loader": "^7.0.5",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.5",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-node-externals": "^1.7.2"
   }
 }

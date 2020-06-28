@@ -5,7 +5,7 @@ const connectDB = require('./config/db');
 
 // Load config
 dotenv.config({
-  path: './config/config.env'
+  path: './src/config/config.env'
 });
 
 connectDB();
