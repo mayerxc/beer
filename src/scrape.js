@@ -14,6 +14,7 @@ axios.get('https://www.treehouseonthefly.com/shop')
       let beerList = $('.grid-meta-wrapper').toArray().map((x) => {
 
         return {
+          brewery: 'Tree House',
           title: $(x).find('.grid-title').text(),
           status: $(x).find('.grid-meta-status').text().replace(/\r?\n|\r/g, '').trim() || 'N/A',
           price: $(x).find('.product-price').text().replace(/\r?\n|\r/g, '')
